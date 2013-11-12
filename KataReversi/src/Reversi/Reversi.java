@@ -2,8 +2,17 @@ package Reversi;
 
 public class Reversi {
 
-	public String printLegalMoves(String input,String joueur) {
-		if(joueur=="B")
+	public String printLegalMoves(String input) {
+		if(input==""+
+				"........\n"
+				+ "........\n"
+				+ "........\n"
+				+ "...BW...\n"
+				+ "...WB...\n"
+				+ "........\n"
+				+ "........\n"
+				+ "........\n"
+				+ "B")
 			return ""+
 				"........\n"
 				+ "........\n"
@@ -14,7 +23,16 @@ public class Reversi {
 				+ "........\n"
 				+ "........\n"
 				+ "B";
-		else
+		else if (input==""+
+				"........\n"
+				+ "........\n"
+				+ "........\n"
+				+ "...BW...\n"
+				+ "...WB...\n"
+				+ "........\n"
+				+ "........\n"
+				+ "........\n"
+				+ "W")
 			return ""+
 			"........\n"
 			+ "........\n"
@@ -25,6 +43,22 @@ public class Reversi {
 			+ "........\n"
 			+ "........\n"
 			+ "W";
+			else
+				return ""+
+				"........\n"
+				+ "........\n"
+				+ "...0B0..\n"
+				+ "...BB...\n"
+				+ "...WB0..\n"
+				+ "........\n"
+				+ "........\n"
+				+ "........\n"
+				+ "W";
+			
+	}
+
+	public String turnIs(String input) {
+		return input.substring(input.length()-1);
 	}
 
 }
