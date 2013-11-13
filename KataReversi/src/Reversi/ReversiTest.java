@@ -8,6 +8,8 @@ import org.junit.Test;
 public class ReversiTest {
 
 	private Reversi reversi;
+	private String input = "";
+	private String output ="";
 	
 	@Before
 	public void initializeReversi(){
@@ -16,7 +18,7 @@ public class ReversiTest {
 
 	@Test
 	public void grilleAuCommencementB(){
-		String input = ""+
+		input = ""+
 				"........\n"
 				+ "........\n"
 				+ "........\n"
@@ -27,7 +29,7 @@ public class ReversiTest {
 				+ "........\n"
 				+ "B";
 		
-		String output = ""+
+		output = ""+
 				"........\n"
 				+ "........\n"
 				+ "....0...\n"
@@ -43,7 +45,7 @@ public class ReversiTest {
 	
 	@Test
 	public void grilleAuCommencementW(){
-		String input = ""+
+		input = ""+
 				"........\n"
 				+ "........\n"
 				+ "........\n"
@@ -54,7 +56,7 @@ public class ReversiTest {
 				+ "........\n"
 				+ "W";
 		
-		String output = ""+
+		output = ""+
 				"........\n"
 				+ "........\n"
 				+ "...0....\n"
@@ -69,7 +71,7 @@ public class ReversiTest {
 	}
 	
 	@Test public void joueurBJoueC5(){
-		String input = ""+
+		input = ""+
 				"........\n"
 				+ "........\n"
 				+ "....B...\n"
@@ -80,7 +82,7 @@ public class ReversiTest {
 				+ "........\n"
 				+ "W";
 		
-		String output = ""+
+		output = ""+
 				"........\n"
 				+ "........\n"
 				+ "...0B0..\n"
@@ -96,7 +98,7 @@ public class ReversiTest {
 	
 	@Test
 	public void tourJoueurB(){
-		String input = ""+
+		input = ""+
 				"........\n"
 				+ "........\n"
 				+ "........\n"
@@ -106,12 +108,12 @@ public class ReversiTest {
 				+ "........\n"
 				+ "........\n"
 				+ "B";
-		assertEquals("B",this.reversi.turnIs(input));
+		assertEquals("B",this.reversi.turnIsAt(input));
 	}
 	
 	@Test
 	public void tourJoueurW(){
-		String input = ""+
+		input = ""+
 				"........\n"
 				+ "........\n"
 				+ "........\n"
@@ -121,6 +123,6 @@ public class ReversiTest {
 				+ "........\n"
 				+ "........\n"
 				+ "W";
-		assertEquals("W", this.reversi.turnIs(input));
+		assertEquals("W", this.reversi.turnIsAt(input));
 	}
 }

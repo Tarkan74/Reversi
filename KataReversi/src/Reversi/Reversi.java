@@ -57,7 +57,7 @@ public class Reversi {
 			
 	}
 
-	public String turnIs(String input) {
+	public String turnIsAt(String input) {
 		return input.substring(input.length()-1);
 	}
 
