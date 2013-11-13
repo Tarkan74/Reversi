@@ -17,7 +17,7 @@ public class ReversiTest {
 	}
 
 	@Test
-	public void grilleAuCommencementB(){
+	public void grilleAuCommencementBParLigne(){
 		input = ""+
 				"........\n"
 				+ "........\n"
@@ -32,10 +32,10 @@ public class ReversiTest {
 		output = ""+
 				"........\n"
 				+ "........\n"
-				+ "....0...\n"
+				+ "........\n"
 				+ "...BW0..\n"
 				+ "..0WB...\n"
-				+ "...0....\n"
+				+ "........\n"
 				+ "........\n"
 				+ "........\n"
 				+ "B";
@@ -44,7 +44,7 @@ public class ReversiTest {
 	}
 	
 	@Test
-	public void grilleAuCommencementW(){
+	public void grilleAuCommencementWParLigne(){
 		input = ""+
 				"........\n"
 				+ "........\n"
@@ -59,10 +59,10 @@ public class ReversiTest {
 		output = ""+
 				"........\n"
 				+ "........\n"
-				+ "...0....\n"
+				+ "........\n"
 				+ "..0BW...\n"
 				+ "...WB0..\n"
-				+ "....0...\n"
+				+ "........\n"
 				+ "........\n"
 				+ "........\n"
 				+ "W";
@@ -70,7 +70,8 @@ public class ReversiTest {
 		assertEquals(output,reversi.printLegalMoves(input));
 	}
 	
-	@Test public void joueurBJoueC5(){
+	/*@Test 
+	public void joueurBJoueC5(){
 		input = ""+
 				"........\n"
 				+ "........\n"
@@ -94,7 +95,34 @@ public class ReversiTest {
 				+ "W";
 		
 		assertEquals(output,reversi.printLegalMoves(input));
-	}
+	}*/
+	
+	/*@Test
+	public void joueurBJoueC5(){
+		input = ""+
+				"........\n"
+				+ "........\n"
+				+ "....B...\n"
+				+ "...BB...\n"
+				+ "...WB...\n"
+				+ "........\n"
+				+ "........\n"
+				+ "........\n"
+				+ "W";
+		
+		output = ""+
+				"........\n"
+				+ "........\n"
+				+ "...0B0..\n"
+				+ "...BB...\n"
+				+ "...WB0..\n"
+				+ "........\n"
+				+ "........\n"
+				+ "........\n"
+				+ "W";
+		
+		assertEquals(output,reversi.printLegalMoves(input));
+	}*/
 	
 	@Test
 	public void tourJoueurB(){
