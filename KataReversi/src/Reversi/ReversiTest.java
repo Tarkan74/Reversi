@@ -70,59 +70,10 @@ public class ReversiTest {
 		assertEquals(output,reversi.printLegalMoves(input));
 	}
 	
-	/*@Test 
-	public void joueurBJoueC5(){
-		input = ""+
-				"........\n"
-				+ "........\n"
-				+ "....B...\n"
-				+ "...BB...\n"
-				+ "...WB...\n"
-				+ "........\n"
-				+ "........\n"
-				+ "........\n"
-				+ "W";
+	@Test
+	public void grilleAuCommencementBParCol(){
 		
-		output = ""+
-				"........\n"
-				+ "........\n"
-				+ "...0B0..\n"
-				+ "...BB...\n"
-				+ "...WB0..\n"
-				+ "........\n"
-				+ "........\n"
-				+ "........\n"
-				+ "W";
-		
-		assertEquals(output,reversi.printLegalMoves(input));
-	}*/
-	
-	/*@Test
-	public void joueurBJoueC5(){
-		input = ""+
-				"........\n"
-				+ "........\n"
-				+ "....B...\n"
-				+ "...BB...\n"
-				+ "...WB...\n"
-				+ "........\n"
-				+ "........\n"
-				+ "........\n"
-				+ "W";
-		
-		output = ""+
-				"........\n"
-				+ "........\n"
-				+ "...0B0..\n"
-				+ "...BB...\n"
-				+ "...WB0..\n"
-				+ "........\n"
-				+ "........\n"
-				+ "........\n"
-				+ "W";
-		
-		assertEquals(output,reversi.printLegalMoves(input));
-	}*/
+	}
 	
 	@Test
 	public void tourJoueurB(){
